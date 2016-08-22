@@ -1,6 +1,6 @@
 #QUS - Quick User Searchbar
 
-[**LINK**](http://rawnly.github.io/qus/)
+[**LINK**](http://rawnly.github.io/QUS/)
 
 ##Other
 - Coded with [Atom](http://atom.io) an **awsome** text editor.
