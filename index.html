@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+    footer {
+      position: fixed;
+      background-color: #181e23; }
+      footer #made {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        display: block; }
+        footer #made .glyphicon {
+          color: #e01f48; }
+    </style>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff">
+    <!-- / Meta tags -->
+
+    <title>QUS - Quick User Search</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!-- AngularJS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <!-- Clipboard.js -->
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.5.10/dist/clipboard.min.js"></script>
+    <!-- ClassList -->
+    <script src="https://cdn.jsdelivr.net/classlist/2014.01.31/classList.min.js"></script>
+    <!-- BootStrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Babel -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js" charset="utf-8"></script>
+    <!-- Vivus JS -->
+    <script src="http://cdn.jsdelivr.net/vivus/latest/vivus.min.js" charset="utf-8"></script>
+    <!-- Underscore JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" charset="utf-8"></script>
+    <!-- Detect JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Detect.js/2.2.2/detect.min.js" charset="utf-8"></script>
+    <!-- Personal JS -->
+    <script src="js/main.js" charset="utf-8"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <!-- Classes CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Rawnly/V2Classes.css/master/css/classes.css" >
+    <!-- Coloraiz CSS -->
+    <link rel="stylesheet" href="https://rawgit.com/webeproject/Coloraiz.css/master/Coloraiz/coloraiz.min.css" >
+    <!-- Icons Sets -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <!-- PS (Personal Stylesheet) -->
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="font center oswald x3" id="title">
+          QUS - Quick User Search
+          <span id="sub" class="font bitter x2">
+            for
+            <i class="icon ion-social-github"></i>
+          </span>
+        </h1>
+        <div class="grp">
+          <input type="text" placeholder="@username" id="user" />
+          <i class="icon ion-plus-circled font x1" id="add"></i>
+        </div>
+        <div id="checks">
+          <input type="checkbox" id="checkbox1" checked  /> Pin Profile Photos <br />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="mobile_info" class="container">
+        <img src="null" style="width:100px" id="img_mobile"/> <br />
+        <div class="text-center">
+          <span id="m_name"></span> <br />
+          <span id="m_email"></span> <br />
+          <span id="m_blog"></span> <br />
+          <span id="m_location"></span> <br />
+          <span id="m_repos"></span>
+        </div>
+      </div>
+      <table id="myTable">
+          <thead>
+            <tr>
+              <th>Photo</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Blog</th>
+              <th>Location</th>
+              <th>Pubic Repos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="first_row">
+              <td id="photo"><img id="photo_url" src="null" class="y_photo"/></td>
+              <td id="name">     </td>
+              <td id="email">    </td>
+              <td id="blog">     </td>
+              <td id="location"> </td>
+              <td id="repos">    </td>
+            </tr>
+            <!-- Content -->
+          </tbody>
+      </table>
+    </main>
+    <footer>
+      <span id="made">
+        <i class="icon ion-edit"></i> with <span class="glyphicon glyphicon-heart"></span> by <a href="#" class="font link light"><b>Rawnly</b></a>
+      </span>
+    </footer>
+  </body>
+</html>
