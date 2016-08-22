@@ -4,7 +4,7 @@ $(document).ready(function() {
     $("#myTable").css('display', 'none');
     $("#add").css('display', 'none');
     $("#checks").css('display', 'none');
-    $("footer").css('position', 'relative');
+    $("#mobile_info").css('margin-bottom', '150px');
 
     $('#user').keypress(function (e) {
       var key = e.which;
