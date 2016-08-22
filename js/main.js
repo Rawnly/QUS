@@ -1,9 +1,10 @@
 $(document).ready(function() {
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    
+
     $("#myTable").css('display', 'none');
     $("#add").css('display', 'none');
     $("#checks").css('display', 'none');
+    $("footer").css('position', 'absolute');
 
     $('#user').keypress(function (e) {
       var key = e.which;
